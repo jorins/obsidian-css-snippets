@@ -1,0 +1,14 @@
+/* Various conditions that can be added to images using, for example,
+* ![[image_path.png|center]]
+*/
+
+/* Center image */
+img[alt*="center"] {
+  display: block;
+  margin: auto;
+}
+
+/* Invert image and rotate hue to compensate in dark mode */
+.theme-dark img[alt*="invert-dark"] {
+  filter: invert(100%) hue-rotate(180deg);
+}

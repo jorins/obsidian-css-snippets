@@ -1,0 +1,29 @@
+/* Personal library of colours */
+
+:root {
+  --grey:         hsl(  0deg,  0%, 50%);
+}
+
+.theme-light {
+  --red:          hsl(  0deg, 70%, 47%);
+  --orange:       hsl( 30deg, 70%, 47%);
+  --yellow:       hsl( 55deg, 60%, 43%);
+  --lime:         hsl( 85deg, 70%, 43%);
+  --green:        hsl(120deg, 70%, 43%);
+  --cyan:         hsl(180deg, 70%, 38%);
+  --blue:         hsl(220deg, 70%, 47%);
+  --purple:       hsl(270deg, 70%, 47%);
+  --pink:         hsl(320deg, 70%, 43%);
+}
+
+.theme-dark {
+  --red:          hsl(  0deg, 50%, 53%);
+  --orange:       hsl( 30deg, 50%, 53%);
+  --yellow:       hsl( 55deg, 54%, 47%);
+  --lime:         hsl( 85deg, 50%, 47%);
+  --green:        hsl(120deg, 45%, 46%);
+  --cyan:         hsl(180deg, 50%, 43%);
+  --blue:         hsl(220deg, 50%, 62%);
+  --purple:       hsl(270deg, 50%, 64%);
+  --pink:         hsl(320deg, 40%, 50%);
+}
