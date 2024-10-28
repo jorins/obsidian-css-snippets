@@ -8,7 +8,12 @@ img[alt*="center"] {
   margin: auto;
 }
 
-/* Invert image and rotate hue to compensate in dark mode */
+/* Invert image and rotate hue to compensate in dark theme */
 .theme-dark img[alt*="invert-dark"] {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+/* Invert image and rotate hue to compensate in light theme */
+.theme-light img[alt*="invert-light"] {
   filter: invert(100%) hue-rotate(180deg);
 }
