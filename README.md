@@ -1,5 +1,13 @@
 Personal set of Obsidian snippets.
 
+# Installation
+
+Symlink snippets into your vault:
+
+```sh
+$ ln -s /path/to/obsidian-css-snippets/snippets /path/to/obsidian-vault/.obsidian/snippets
+```
+
 # Snippets
 
 ## `colours.css`
@@ -21,10 +29,8 @@ Modifiers that can be applied to images using pipes e.g.
 | CSS class      | Effect |
 | -------------- | ------ |
 | `center`       | Center image |
-| `invert-dark`  | Invert and flip image hue on dark theme |
-| `invert-light` | Invert and flip image hue on light theme |
-
-
+| `invert-dark`  | Invert image and rotate hue by 180 degrees on dark theme |
+| `invert-light` | Invert image and rotate hue by 180 degrees on light theme |
 
 ## `sidebar.css`
 
