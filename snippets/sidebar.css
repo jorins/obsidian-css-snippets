@@ -30,33 +30,33 @@
   --active-contrast-amount: 10%;
 }
 
-.nav-folder-title[data-path^="0"] { --color: var(--grey); }
-.nav-folder-title[data-path^="1"] { --color: var(--red); }
-.nav-folder-title[data-path^="2"] { --color: var(--orange); }
-.nav-folder-title[data-path^="3"] { --color: var(--yellow); }
-.nav-folder-title[data-path^="4"] { --color: var(--lime); }
-.nav-folder-title[data-path^="5"] { --color: var(--green); }
-.nav-folder-title[data-path^="6"] { --color: var(--cyan); }
-.nav-folder-title[data-path^="7"] { --color: var(--blue); }
-.nav-folder-title[data-path^="8"] { --color: var(--purple); }
-.nav-folder-title[data-path^="9"] { --color: var(--pink); }
+[data-path^="0"] { --sidebar-color: var(--grey); }
+[data-path^="1"] { --sidebar-color: var(--red); }
+[data-path^="2"] { --sidebar-color: var(--orange); }
+[data-path^="3"] { --sidebar-color: var(--yellow); }
+[data-path^="4"] { --sidebar-color: var(--lime); }
+[data-path^="5"] { --sidebar-color: var(--green); }
+[data-path^="6"] { --sidebar-color: var(--cyan); }
+[data-path^="7"] { --sidebar-color: var(--blue); }
+[data-path^="8"] { --sidebar-color: var(--purple); }
+[data-path^="9"] { --sidebar-color: var(--pink); }
 
 .nav-folder-title {
-  color: var(--color);
-  --nav-item-color-hover: color-mix( in srgb, var(--color) var(--fg-contrast-amount), var(--contrast-color));
-  --nav-item-background-hover: color-mix( in srgb, var(--color) var(--bg-contrast-amount), transparent);
-  --background-modifier-border-focus: color-mix( in srgb, var(--color) 40%, transparent);
-  --nav-collapse-icon-color: color-mix(in srgb, var(--color) 60%, transparent);
+  color: var(--sidebar-color);
+  --nav-item-color-hover: color-mix( in srgb, var(--sidebar-color) var(--fg-contrast-amount), var(--contrast-color));
+  --nav-item-background-hover: color-mix( in srgb, var(--sidebar-color) var(--bg-contrast-amount), transparent);
+  --background-modifier-border-focus: color-mix( in srgb, var(--sidebar-color) 40%, transparent);
+  --nav-collapse-icon-color: color-mix(in srgb, var(--sidebar-color) 60%, transparent);
 }
 .nav-folder-title:hover {
-  --nav-collapse-icon-color: color-mix( in srgb, var(--color) 60%, var(--contrast-color));
+  --nav-collapse-icon-color: color-mix( in srgb, var(--sidebar-color) 60%, var(--contrast-color));
 }
 .tree-item-children .nav-folder:has(.nav-folder-title) {
-  --nav-indentation-guide-color: color-mix( in srgb, var(--color) var(--medium-contrast-amount), transparent);
+  --nav-indentation-guide-color: color-mix( in srgb, var(--sidebar-color) var(--medium-contrast-amount), transparent);
 }
 .tree-item-children .nav-folder:has(.nav-folder-title) .nav-file-title {
-  color: color-mix( in srgb, var(--color) var(--medium-contrast-amount), var(--default-text-color));
-  --nav-item-background-hover: color-mix( in srgb, color-mix(in srgb, var(--color) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
-  --background-modifier-border-focus: color-mix( in srgb, var(--color) 40%, transparent);
-  --nav-item-background-active: color-mix( in srgb, var(--color) var(--active-contrast-amount), transparent);
+  color: color-mix( in srgb, var(--sidebar-color) var(--medium-contrast-amount), var(--default-text-color));
+  --nav-item-background-hover: color-mix( in srgb, color-mix(in srgb, var(--sidebar-color) 50%, var(--highlight)) var(--bg-contrast-amount), transparent);
+  --background-modifier-border-focus: color-mix( in srgb, var(--sidebar-color) 40%, transparent);
+  --nav-item-background-active: color-mix( in srgb, var(--sidebar-color) var(--active-contrast-amount), transparent);
 }
